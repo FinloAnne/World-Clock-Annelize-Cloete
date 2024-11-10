@@ -12,15 +12,15 @@ function updateTime() {
     );
   }
 
-  // South Africa
-  let southAfricaElement = document.querySelector("#south-africa");
-  if (southAfricaElement) {
-    let southAfricaDateElement = southAfricaElement.querySelector(".date");
-    let southAfricaTimeElement = southAfricaElement.querySelector(".time");
-    let southAfricaTime = moment().tz("Africa/South Africa");
+  // Paris
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
 
-    southAfricaDateElement.innerHTML = southAfricaTime.format("MMMM	Do YYYY");
-    southAfricaTimeElement.innerHTML = southAfricaTime.format(
+    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
