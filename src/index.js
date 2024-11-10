@@ -13,8 +13,8 @@ function updateTime() {
   }
 
   // South Africa
-  let southAfricaElement = document.querySelector("#paris");
-  if (parisElement) {
+  let southAfricaElement = document.querySelector("#south-africa");
+  if (southAfricaElement) {
     let southAfricaDateElement = southAfricaElement.querySelector(".date");
     let southAfricaTimeElement = southAfricaElement.querySelector(".time");
     let southAfricaTime = moment().tz("Africa/South Africa");
